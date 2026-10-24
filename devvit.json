@@ -3,16 +3,32 @@
   "name": "wren-automation",
   "server": {
     "externalEndpoints": {
-      "run": {"endpoint": "/external/run", "scopes": ["global"]}
+      "run": {
+        "endpoint": "/external/run",
+        "scopes": [
+          "global"
+        ]
+      }
     }
   },
   "permissions": {
-    "reddit": {"enable": true, "scope": "user"},
-    "http": {"enable": true, "domains": ["app.wrenautomation.com"]}
+    "reddit": {
+      "enable": true,
+      "scope": "user"
+    },
+    "http": {
+      "enable": true,
+      "domains": [
+        "app.wrenautomation.com"
+      ]
+    }
   },
   "scheduler": {
     "tasks": {
-      "poll": {"endpoint": "/internal/relay/poll", "cron": "*/1 * * * *"}
+      "poll": {
+        "endpoint": "/internal/relay/poll",
+        "cron": "*/1 * * * *"
+      }
     }
   },
   "settings": {
@@ -27,5 +43,8 @@
   },
   "scripts": {
     "dev": "npm run watch"
+  },
+  "dev": {
+    "subreddit": "wren_automation_dev"
   }
 }
