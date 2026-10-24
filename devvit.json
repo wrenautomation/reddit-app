@@ -5,9 +5,7 @@
     "externalEndpoints": {
       "run": {
         "endpoint": "/external/run",
-        "scopes": [
-          "global"
-        ]
+        "scopes": ["global"]
       }
     }
   },
@@ -18,9 +16,7 @@
     },
     "http": {
       "enable": true,
-      "domains": [
-        "app.wrenautomation.com"
-      ]
+      "domains": ["app.wrenautomation.com"]
     }
   },
   "scheduler": {
