@@ -1,0 +1,31 @@
+{
+  "$schema": "https://developers.reddit.com/schema/config-file.v1.json",
+  "name": "wren-automation",
+  "server": {
+    "externalEndpoints": {
+      "run": {"endpoint": "/external/run", "scopes": ["global"]}
+    }
+  },
+  "permissions": {
+    "reddit": {"enable": true, "scope": "user"},
+    "http": {"enable": true, "domains": ["app.wrenautomation.com"]}
+  },
+  "scheduler": {
+    "tasks": {
+      "poll": {"endpoint": "/internal/relay/poll", "cron": "*/1 * * * *"}
+    }
+  },
+  "settings": {
+    "global": {
+      "relayToken": {
+        "type": "string",
+        "label": "Relay token",
+        "helpText": "The bearer wren's relay route checks.",
+        "isSecret": true
+      }
+    }
+  },
+  "scripts": {
+    "dev": "npm run watch"
+  }
+}
