@@ -45,4 +45,4 @@ The following domains are requested for this app:
 
 ## License
 
-[PolyForm Shield 1.0.0](LICENSE.md). Required Notice: Copyright 2026 William Jin (https://wrenautomation.com)
+[PolyForm Strict 1.0.0](LICENSE.md). Required Notice: Copyright 2026 William Jin (https://wrenautomation.com)
